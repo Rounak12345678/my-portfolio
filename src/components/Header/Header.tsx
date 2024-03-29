@@ -46,8 +46,8 @@ const drawerWidth = "100%";
 
 export const HeaderWrap = styled(Box)`
   &.main_head {
-    background: url("/assets/images/layerbackheader.webp") no-repeat bottom
-      center #000;
+    background: url("assets/images/layerbackheader.webp") no-repeat bottom
+      center ;
     background-size: 100% 100%;
     padding-top: 40px;
     padding-bottom: 46px;
