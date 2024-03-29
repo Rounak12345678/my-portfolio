@@ -1,7 +1,8 @@
 
-import eventEmitter from "@/pages/services/event.emitter";
+
 import { useCallback } from "react";
 import events from "../../json/events/events";
+import eventEmitter from "./services/event.emitter";
 
 
 type ImgWithEventProps = React.ClassAttributes<HTMLImageElement> &

@@ -4,9 +4,10 @@ import { HomeDreamMain } from "@/components/HomeDream/HomeDreamMain";
 import Wrapper from "@/components/Wrapper/Wrapper";
 import { Container, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import eventEmitter from "./services/event.emitter";
+
 import events from "../../json/events/events";
 import Pageloader from "@/components/Pageloader/Pageloader";
+import eventEmitter from "@/components/services/event.emitter";
 
 const Index = () => {
   const [imagesLoadedCount, setImagesLoadedCount] = useState(0);
