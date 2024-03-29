@@ -1,3 +1,4 @@
+import { EnterPerilMain } from "@/components/EnterPeril/EnterPerilMain";
 import { BannerMain } from "@/components/HomeBanner/BannerMain";
 import { HomeDreamMain } from "@/components/HomeDream/HomeDreamMain";
 import Wrapper from "@/components/Wrapper/Wrapper";
@@ -9,6 +10,7 @@ const Index = () => {
     <Wrapper>
       <BannerMain />
       <HomeDreamMain />
+      <EnterPerilMain />
     </Wrapper>
   );
 };
