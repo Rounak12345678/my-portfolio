@@ -72,6 +72,7 @@ export const HeaderWrap = styled(Box)`
     margin-top: 5px;
 
     .headerLogo {
+
       img {
         width: 11.4vw;
         @media (max-width: 1399px) {
@@ -311,35 +312,7 @@ export default function Header(props: Props) {
         >
           <Container fixed>
             <Box className="gapcmnLfRt">
-              {/* <Box className="navbarPartTop">
-                <List className="topNav">
-                  {giftShopItems.map((item, index) => (
-                    <ListItem
-                      key={index}
-                      data-aos="fade-up"
-                      data-aos-duration="1500"
-                      data-aos-delay={index * 100 + 100}
-                    >
-                      <Link href={item?.route}>{item?.name}</Link>
-                    </ListItem>
-                  ))}
-                </List>
-                <Box
-                  className="topboxrt"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                  data-aos-delay="350"
-                >
-                  <Button className="shop_btHead">
-                    <img
-                      src={assest?.coffinIcon}
-                      width={85}
-                      height={165}
-                      alt=""
-                    />
-                  </Button>
-                </Box>
-              </Box> */}
+           
             </Box>
           </Container>
         </Box>
@@ -356,7 +329,7 @@ export default function Header(props: Props) {
                 <img
                   src={assest.logo_img2}
                   width={425}
-                  height={264}
+             
                   alt="Logo"
                 />
               </Link>

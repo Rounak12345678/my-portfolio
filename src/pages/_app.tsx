@@ -1,5 +1,5 @@
 
-import "@/styles/globals.css";
+import "@/styles/globals.scss";
 import type { AppContext, AppProps } from "next/app";
 import App from "next/app";
 import { QueryClient, QueryClientProvider } from "react-query";

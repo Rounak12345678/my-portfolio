@@ -1,0 +1,59 @@
+
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--bodyFontColor);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  // font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto";
+  background-color: var(--black) !important;
+  overflow-x: hidden;
+}
+#__next {
+  overflow-x: hidden;
+}
+
+.wordTextureCmn {
+  display: inline-block;
+}
+
+
+.modal_drawserHeads {
+  .MuiPaper-root {
+    background: #000;
+    padding: 41px 40px;
+    @media (max-width: 767px) {
+      padding: 40px 20px;
+    }
+    @media (max-width: 479px) {
+      padding: 40px 15px;
+    }
+  }
+}
+
+.wrapper_comp {
+  max-width: 1220px;
+  margin: 0 auto;
+  @media (max-width: 1399px) {
+    max-width: 960px;
+  }
+  @media (max-width: 1199px) {
+    max-width: 100%;
+  }
+}
