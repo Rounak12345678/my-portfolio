@@ -1,5 +1,4 @@
-import { IsCheckdIn } from "@/redux-tookit/slice/userSlice";
-import { store } from "@/redux-tookit/store/store";
+
 import "@/styles/globals.css";
 import type { AppContext, AppProps } from "next/app";
 import App from "next/app";
@@ -15,16 +14,15 @@ export interface CustomAppProps extends AppProps {
 
 
 export default function CustomApp({user,hasToken, Component, pageProps }: CustomAppProps) {
-  const queryClient = new QueryClient();
 
-  store.dispatch(IsCheckdIn({hasToken,user}))
+
+
 
   return (
-    <Provider store={store}>
-      <QueryClientProvider client={queryClient}>
+
+   
         <Component {...pageProps} />
-      </QueryClientProvider>
-    </Provider>
+
   );
 }
 
@@ -32,13 +30,7 @@ export default function CustomApp({user,hasToken, Component, pageProps }: Custom
 CustomApp.getInitialProps = async (context: AppContext) => {
   const appProps = await App.getInitialProps(context);
   const cookies = nookies.get(context.ctx);
-  let hasToken = false;
-  let user = null;
-  if (cookies?.token) {
-    hasToken = true;
-    user = cookies?.token
-  }
 
 
-  return { ...appProps, hasToken, user };
+  return { ...appProps };
 };
