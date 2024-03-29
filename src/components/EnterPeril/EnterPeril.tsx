@@ -13,6 +13,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { forwardRef, useEffect, useRef } from "react";
 import assest from "../../../json/assest";
 import { styled } from "@mui/material";
+import ImgWithEvent from "../ImgWithEvent";
 
 
  const EnterPerilStyled = styled(Box)`
@@ -203,7 +204,7 @@ import { styled } from "@mui/material";
 gsap.registerPlugin(ScrollTrigger);
 
 const ImageWithRef = forwardRef(({ src, ...props }: any, ref: any) => (
-  <img src={src} {...props} alt="no-image" ref={ref} />
+  <ImgWithEvent src={src} {...props} alt="no-image" ref={ref} />
 ));
 function EnterPeril() {
   const boxRef = useRef<any>(null);
@@ -399,7 +400,7 @@ function EnterPeril() {
     <EnterPerilStyled>
       <Box className="enterPerilBannr">
         <figure className="main_img">
-          <img src={assest?.bannerPeril} alt="no-image" />
+          <ImgWithEvent src={assest?.bannerPeril} alt="no-image" />
         </figure>
 
         <Box
@@ -412,7 +413,7 @@ function EnterPeril() {
         />
         <Box className="enterPerilBannr_inner">
           <Box className="enterPerilBannr_boxOne">
-            <img
+            <ImgWithEvent
               src={assest?.peril_secBox1}
               width={1920}
               height={3539}
@@ -421,11 +422,11 @@ function EnterPeril() {
           </Box>
 
           <Box className="enterPerilBannr_boxTwo addedBox">
-            <img src={assest?.peril_secBox2} alt="no-image" />
+            <ImgWithEvent src={assest?.peril_secBox2} alt="no-image" />
           </Box>
 
           <Box className="enterPerilBannr_boxThree addedBox">
-            <img
+            <ImgWithEvent
               src={assest?.peril_secBox3}
               width={1242}
               height={1392}
@@ -435,7 +436,7 @@ function EnterPeril() {
 
           <Box className="enterPerilPoste" ref={boxRef}>
             <Container fixed>
-              <img
+              <ImgWithEvent
                 src={assest?.americanSongPoster}
                 width={1920}
                 height={1393}
@@ -450,12 +451,12 @@ function EnterPeril() {
             data-parallax="0.8"
           >
             <Container fixed>
-              <img src={assest?.posterHand} alt="no-image" />
+              <ImgWithEvent src={assest?.posterHand} alt="no-image" />
             </Container>
           </Box>
 
           <Box className="enterPeriCrow" ref={boxRef2}>
-            <img
+            <ImgWithEvent
               src={assest?.crow_btm}
               width={748}
               height={487}
@@ -467,7 +468,7 @@ function EnterPeril() {
               className="red_eye_crow"
               ref={crowredeye}
             >
-              <img
+              <ImgWithEvent
                 src={assest?.crow_btmRed}
                 width={18}
                 height={16}
@@ -478,7 +479,7 @@ function EnterPeril() {
           </Box>
 
           <Box className="enterPeriglowTop">
-            <img
+            <ImgWithEvent
               src={assest?.enterLightImg1}
               width={1183}
               height={828}
@@ -486,7 +487,7 @@ function EnterPeril() {
               alt="no-image"
             />
 
-            <img
+            <ImgWithEvent
               src={assest?.enterLightImg2}
               width={1183}
               height={828}

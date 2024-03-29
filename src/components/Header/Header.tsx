@@ -20,10 +20,6 @@ import * as React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
-
-
-
 import { Container } from "@mui/system";
 
 import { gsap } from "gsap";
@@ -31,6 +27,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { styled } from "@mui/material";
 import assest from "../../../json/assest";
+import ImgWithEvent from "../ImgWithEvent";
+import { primaryColors } from "../../../mui-theme/_muiPalette";
 
 // const CustomButton = dynamic(() => import("@/ui/Buttons/CustomButton"));
 
@@ -46,8 +44,8 @@ const drawerWidth = "100%";
 
 export const HeaderWrap = styled(Box)`
   &.main_head {
-    background: url("assets/images/layerbackheader.webp") no-repeat bottom
-      center ;
+    background: url("/assets/images/layerbackheader.webp") no-repeat bottom
+      center;
     background-size: 100% 100%;
     padding-top: 40px;
     padding-bottom: 46px;
@@ -72,7 +70,6 @@ export const HeaderWrap = styled(Box)`
     margin-top: 5px;
 
     .headerLogo {
-
       img {
         width: 11.4vw;
         @media (max-width: 1399px) {
@@ -125,9 +122,9 @@ export const HeaderWrap = styled(Box)`
           > a {
             font-size: 1.85vw;
             line-height: 1.2;
-            color: #fff;
+            color: ${primaryColors?.colorfdfdfc};
             &:hover {
-              color: #fff;
+              color: ${primaryColors.primary1};
             }
             @media (max-width: 2000px) {
               font-size: 1.7vw;
@@ -183,9 +180,9 @@ export const HeaderWrap = styled(Box)`
         a {
           font-size: 1.54vw;
           line-height: 1.1;
-          color: #fff;
+          color: ${primaryColors?.colorffd39e};
           &:hover {
-            color: #000;
+            color: ${primaryColors?.white};
           }
           @media (max-width: 1199px) {
             font-size: 23px;
@@ -311,9 +308,7 @@ export default function Header(props: Props) {
           sx={{ display: { xs: "block", md: "block" } }}
         >
           <Container fixed>
-            <Box className="gapcmnLfRt">
-           
-            </Box>
+            <Box className="gapcmnLfRt"></Box>
           </Container>
         </Box>
 
@@ -326,12 +321,7 @@ export default function Header(props: Props) {
                 data-aos="fade-right"
                 data-aos-duration="1500"
               >
-                <img
-                  src={assest.logo_img2}
-                  width={425}
-             
-                  alt="Logo"
-                />
+                <ImgWithEvent src={assest.logo_img2} width={425} alt="Logo" />
               </Link>
 
               <Box sx={{ display: { xs: "block" } }} className="navbar">

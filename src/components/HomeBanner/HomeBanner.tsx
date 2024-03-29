@@ -12,6 +12,7 @@ import { useEffect, useRef } from "react";
 
 import assest from "../../../json/assest";
 import { styled } from "@mui/material";
+import ImgWithEvent from "../ImgWithEvent";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -365,7 +366,7 @@ function HomeBanner() {
     <HomeBannerStyled>
       <Box className="home_bannerPart">
         <figure className="main_img">
-          <img src={assest?.home_banner} alt="no-image" />
+          <ImgWithEvent src={assest?.home_banner} alt="no-image" />
         </figure>
 
         <Box className="home_bannerSecOne">
@@ -374,7 +375,7 @@ function HomeBanner() {
               <Box className="banner_topshld">
                 <Box className="banner_topshld_inns">
                   <Box className="bannerTopSld_imgs" ref={movingObjectsRef1}>
-                    <img
+                    <ImgWithEvent
                       src={assest?.topsldnewimg3}
                       width={451}
                       height={775}
@@ -385,7 +386,7 @@ function HomeBanner() {
                     className="bannerTopSld_imgs hover"
                     ref={movingObjectsRef2}
                   >
-                    <img
+                    <ImgWithEvent
                       src={assest?.topsldnewimg4}
                       width={451}
                       height={775}
@@ -397,19 +398,19 @@ function HomeBanner() {
 
               <Box className="banner_crow">
                 <figure className="cr_img">
-                  <img src={assest?.crow} alt="no-image" />
+                  <ImgWithEvent src={assest?.crow} alt="no-image" />
                 </figure>
                 <Typography
                   variant="caption"
                   className="red_eye"
                   ref={crowredeye}
                 >
-                  <img src={assest?.red_eye} alt="no-image" />
+                  <ImgWithEvent src={assest?.red_eye} alt="no-image" />
                 </Typography>
               </Box>
               <Box className="shidle_mainBoxes">
                 <figure className="shld_imgs">
-                  <img
+                  <ImgWithEvent
                     src={assest?.bannersld}
                     width={1920}
                     height={1725}
@@ -418,7 +419,7 @@ function HomeBanner() {
                 </figure>
                 <Box className="sld_innerContent">
                   <Typography variant="caption" className="banCnt1">
-                    <img
+                    <ImgWithEvent
                       src={assest?.sld_bannerCn1}
                       width={1647}
                       height={793}
@@ -426,7 +427,7 @@ function HomeBanner() {
                     />
                   </Typography>
                   <Typography variant="caption" className="banCnt2">
-                    <img
+                    <ImgWithEvent
                       src={assest?.sld_bannerCn2}
                       width={1518}
                       height={262}
@@ -435,7 +436,7 @@ function HomeBanner() {
                   </Typography>
                 </Box>
                 <Box className="shld_lightLft">
-                  <img
+                  <ImgWithEvent
                     src={assest?.spotlightLeft}
                     width={1337}
                     height={1150}
@@ -444,7 +445,7 @@ function HomeBanner() {
                 </Box>
 
                 <Box className="shld_lightRight">
-                  <img
+                  <ImgWithEvent
                     src={assest?.spotlightRight}
                     width={1874}
                     height={1751}
@@ -457,7 +458,7 @@ function HomeBanner() {
                   ref={parallaxRef}
                   data-parallax="0.5"
                 >
-                  <img
+                  <ImgWithEvent
                     src={assest?.banner_btmImg1}
                     width={732}
                     height={947}
@@ -470,7 +471,7 @@ function HomeBanner() {
                   ref={parallaxRef}
                   data-parallax="-0.5"
                 >
-                  <img
+                  <ImgWithEvent
                     src={assest?.banner_btmImg2}
                     width={1194}
                     height={465}

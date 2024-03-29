@@ -9,6 +9,7 @@ import ListItem from "@mui/material/ListItem";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/system";
 import Link from "next/link";
+import { primaryColors } from "../../../mui-theme/_muiPalette";
 
 const FooterWrap = styled(Box)`
   .footer_mainSec {
@@ -69,7 +70,7 @@ const FooterWrap = styled(Box)`
     p {
       font-size: 1.6vw;
       line-height: 1;
-      color: #fff;
+      color: ${primaryColors?.white};
       @media (max-width: 1199px) {
         font-size: 20px;
       }
@@ -89,7 +90,7 @@ const FooterWrap = styled(Box)`
         display: inline-block;
         width: auto;
         line-height: 1;
-        border-right: 4px solid #fff;
+        border-right: 4px solid ${primaryColors?.white};
         margin-right: 1vw;
         padding-right: 1vw;
         @media (max-width: 599px) {
@@ -101,7 +102,7 @@ const FooterWrap = styled(Box)`
         a {
           font-size: 1.6vw;
           line-height: 1;
-          color: #fff;
+          color: ${primaryColors?.white};
           position: relative;
           padding-bottom: 6px;
 
@@ -118,7 +119,7 @@ const FooterWrap = styled(Box)`
             bottom: 0;
             width: 100%;
             height: 7px;
-            background: #fff;
+            background: ${primaryColors?.white};
             @media (max-width: 599px) {
               height: 3px;
             }
@@ -130,9 +131,9 @@ const FooterWrap = styled(Box)`
           }
 
           &:hover {
-            color: #fff;
+            color: ${primaryColors.primary1};
             &:after {
-              background: #fff;
+              background: ${primaryColors?.primary1};
             }
           }
         }
@@ -142,6 +143,9 @@ const FooterWrap = styled(Box)`
   .footer_info {
     a {
       color: white;
+      &:hover{
+        color: black;
+      }
     }
 
     li {
@@ -153,6 +157,7 @@ const FooterWrap = styled(Box)`
     }
   }
 `;
+
 
 const Footer = () => {
   return (

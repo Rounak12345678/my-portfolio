@@ -27,6 +27,11 @@ import {
   slideContent,
   starringCast,
 } from "../../../json/mock/starringCast.mock";
+import ImgWithEvent from "../ImgWithEvent";
+import { primaryColors } from "../../../mui-theme/_muiPalette";
+import { copperplate_roman_hplhsRg, faroestregular, franchiseregular, im_fell_english_scregular } from "../../../mui-theme/_muiTheme";
+import ArrowRightIcon from "../../../ui/Icons/ArrowRightIcon";
+import FileIcon from "../../../ui/Icons/FileIcon";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -95,8 +100,8 @@ const homeDreamPartMock = [
       .subhd {
         font-size: 3vw;
         line-height: 1.1;
-    
-
+        font-family: ${im_fell_english_scregular.style.fontFamily};
+     
         @media (max-width: 2000px) {
           font-size: 2.7vw;
         }
@@ -110,7 +115,8 @@ const homeDreamPartMock = [
       .mainheads {
         font-size: 10vw;
         line-height: 0.9;
-      
+        color: ${primaryColors.color030000};
+        font-family: ${franchiseregular.style.fontFamily};
 
         @media (max-width: 1199px) {
           font-size: 95px;
@@ -129,7 +135,7 @@ const homeDreamPartMock = [
         .subhd {
           font-size: 3.2vw;
           line-height: 1;
-   
+          font-family: ${copperplate_roman_hplhsRg.style.fontFamily};
           margin-bottom: 30px;
           @media (max-width: 1199px) {
             font-size: 37px;
@@ -146,7 +152,7 @@ const homeDreamPartMock = [
           line-height: 1;
           font-size: 8.6vw;
 
-  
+          font-family: ${faroestregular.style.fontFamily};
 
           @media (max-width: 1199px) {
             font-size: 95px;
@@ -159,7 +165,7 @@ const homeDreamPartMock = [
           }
           .subCp {
             font-size: 6.8vw;
-      
+            font-family: ${faroestregular.style.fontFamily};
             @media (max-width: 599px) {
               font-size: 30px;
             }
@@ -207,7 +213,7 @@ const homeDreamPartMock = [
     .subheadBtmMain {
       font-size: 2.83vw;
       line-height: 1;
-
+      font-family: ${im_fell_english_scregular.style.fontFamily};
       @media (max-width: 1199px) {
         font-size: 29px;
       }
@@ -221,7 +227,7 @@ const homeDreamPartMock = [
         display: block;
         font-size: 4vw;
         line-height: 1;
- 
+        font-family: ${im_fell_english_scregular.style.fontFamily};
         @media (max-width: 1199px) {
           font-size: 20px;
           margin-top: 5px;
@@ -294,7 +300,7 @@ const homeDreamPartMock = [
     .strmtenderBtmHeadMain {
       font-size: 15.3vw;
       line-height: 0.8;
-  
+      font-family: ${franchiseregular.style.fontFamily};
       @media (max-width: 2000px) {
         font-size: 13.3vw;
       }
@@ -311,7 +317,7 @@ const homeDreamPartMock = [
     .strmtenderBtmHeadSub {
       font-size: 2.8vw;
       line-height: 1;
-
+      font-family: ${im_fell_english_scregular.style.fontFamily};
       @media (max-width: 2000px) {
         font-size: 2.4vw;
       }
@@ -328,7 +334,7 @@ const homeDreamPartMock = [
     margin: 0 auto;
 
     width: auto !important;
-
+    /* border: 0.4vw solid ${primaryColors?.black}; */
     background: url("/assets/images/frame.webp") no-repeat;
     background-size: 100% 100%;
     padding: 20px;
@@ -500,7 +506,7 @@ const homeDreamPartMock = [
       margin: 0 auto;
       font-size: 6.1vw;
       line-height: 0.7;
-
+      font-family: ${copperplate_roman_hplhsRg.style.fontFamily};
       @media (max-width: 2000px) {
         font-size: 5vw;
       }
@@ -564,7 +570,7 @@ const homeDreamPartMock = [
     .cast_head {
       font-size: 2.6vw;
       line-height: 1;
- 
+      font-family: ${im_fell_english_scregular.style.fontFamily};
       @media (max-width: 1199px) {
         font-size: 24px;
       }
@@ -626,7 +632,7 @@ const homeDreamPartMock = [
     .othercmp {
       font-size: 7.8vw;
       line-height: 1;
-   
+      font-family: ${faroestregular.style.fontFamily};
       @media (max-width: 2000px) {
         font-size: 6.2vw;
       }
@@ -781,370 +787,370 @@ function HomeDream() {
 
   return (
     <HomeDreamStyled>
-      <Box
-        className="dreamUpBy"
-        sx={{
-          background: "url(/assets/images/wooden_back.webp) no-repeat bottom",
-          backgroundSize: "cover",
-        }}
-      >
-        <Box className="stormtenderBoxes" id="profile">
-          <Box className="stormtenderBoxes_top" ref={svgRefParent}>
-            <Container fixed>
-              <Box className="stormtenderTopWrappers">
-                <Box className="stormtenderTophead">
-                  <Box className="head_lineTo" ref={svgRef}>
-                    {/* <svg>
-                      <path
-                        fillRule="evenodd"
-                        fill="rgb(0, 0, 0)"
-                        d="M0.000,0.001 L2581.000,0.001 L2581.000,30.000 L0.000,30.000 L0.000,0.001 Z"
-                      />
-                    </svg> */}
+    <Box
+      className="dreamUpBy"
+      sx={{
+        background: "url(/assets/images/wooden_back.webp) no-repeat bottom",
+        backgroundSize: "cover"
+      }}
+    >
+      <Box className="stormtenderBoxes" id="profile">
+        <Box className="stormtenderBoxes_top" ref={svgRefParent}>
+          <Container fixed>
+            <Box className="stormtenderTopWrappers">
+              <Box className="stormtenderTophead">
+                <Box className="head_lineTo" ref={svgRef}>
+                  {/* <svg>
+                    <path
+                      fillRule="evenodd"
+                      fill="rgb(0, 0, 0)"
+                      d="M0.000,0.001 L2581.000,0.001 L2581.000,30.000 L0.000,30.000 L0.000,0.001 Z"
+                    />
+                  </svg> */}
 
-                    <svg
-                      width="1920"
-                      height="31"
-                      viewBox="0 0 1920 31"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        className="animated-path"
-                        d="M0 16L1920 15.001"
-                        stroke="black"
-                        strokeWidth="30"
-                      />
-                    </svg>
-                  </Box>
-                  <Box className="sec_hdngs">
-                    <Typography
-                      variant="h3"
-                      className="subhd"
-                      data-aos="fade-up"
-                      data-aos-duration={1500}
-                      data-aos-delay="100"
-                    >
-                      I code, therefore I am… constantly learning and growing
-                      🌱💻.I hope you find this amusing!
-                    </Typography>
-                    <Typography
-                      variant="h2"
-                      className="mainheads"
-                      data-aos="fade-up"
-                      data-aos-duration={1500}
-                      data-aos-delay="200"
-                    >
-                      My Profile
-                    </Typography>
-                  </Box>
-                  <Box
-                    className="ln_btm"
-                    data-aos="flip-left"
+                  <svg
+                    width="1920"
+                    height="31"
+                    viewBox="0 0 1920 31"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      className="animated-path"
+                      d="M0 16L1920 15.001"
+                      stroke="black"
+                      strokeWidth="30"
+                    />
+                  </svg>
+                </Box>
+                <Box className="sec_hdngs">
+                  <Typography
+                    variant="h3"
+                    className="subhd"
+                    data-aos="fade-up"
+                    data-aos-duration={1500}
+                    data-aos-delay="100"
+                  >
+                    I code, therefore I am… constantly learning and growing
+                    🌱💻.I hope you find this amusing!
+                  </Typography>
+                  <Typography
+                    variant="h2"
+                    className="mainheads"
+                    data-aos="fade-up"
                     data-aos-duration={1500}
                     data-aos-delay="200"
                   >
-                    <img
-                      src={assest?.btm_tlSec}
-                      width={915}
-                      height={52}
-                      alt="no-image"
-                    />
-                  </Box>
+                    My Profile
+                  </Typography>
                 </Box>
-
-                <Box className="stormtenderBoxes_topImage">
-                  <Box
-                    className="tndboximageCol"
-                    data-aos="zoom-in"
-                    data-aos-duration={2000}
-                    data-aos-delay="200"
-                  >
-                    <img
-                      src={assest.top_lnrImg2}
-                      width={1116}
-                      height={1293}
-                      alt="no-image"
-                    />
-                  </Box>
-                </Box>
-
-                <Box className="stormtenderTophead short">
-                  <Box className="sec_hdngs">
-                    <Typography
-                      variant="h3"
-                      className="subhd"
-                      data-aos="fade-up"
-                      data-aos-duration={1500}
-                      data-aos-delay="100"
-                    >
-                      React Developer <br />
-                      <Typography variant="h4"> (2021 - Current)</Typography>
-                    </Typography>
-                    <Typography
-                      variant="h2"
-                      className="mainheads"
-                      data-aos="fade-up"
-                      data-aos-duration={1500}
-                      data-aos-delay="150"
-                    >
-                      What{" "}
-                      <Typography variant="caption" className="subCp">
-                        I
-                      </Typography>{" "}
-                      Do
-                    </Typography>
-                  </Box>
-                  <Box
-                    className="ln_btm"
-                    data-aos="flip-left"
-                    data-aos-duration={1500}
-                    data-aos-delay="200"
-                  >
-                    <img
-                      src={assest?.btm_tlSec}
-                      width={915}
-                      height={52}
-                      alt="no-image"
-                    />
-                  </Box>
-                  <Box className="subheadBtm">
-                    <List
-                      className="sub_list"
-                      data-aos="fade-up"
-                      data-aos-duration={1500}
-                      data-aos-delay="150"
-                    >
-                      <ListItem>
-                  
-                        Building responsive static websites using Next.js
-                      </ListItem>
-                      <ListItem>
-                
-                        Developing single page applications using React Redux
-                        architecture, ES6
-                      </ListItem>
-                      <ListItem>
-                 
-                        Planned website development, converting mockups into
-                        usable web presence with HTML, JavaScript, AJAX, and
-                        JSON coding
-                      </ListItem>
-                    </List>
-                    {/* <Typography
-                      variant="h2"
-                      className="subheadBtmMain"
-                      data-aos="fade-up"
-                      data-aos-duration={1500}
-                      data-aos-delay="100"
-                    >
-                      Singin’ Trav’lers & Collectors of
-                      <Typography
-                        variant="caption"
-                        className="subbtnCaption"
-                        data-aos="fade-up"
-                        data-aos-duration={1500}
-                        data-aos-delay="150"
-                      >
-                        HONEST TROUBLE
-                      </Typography>
-                    </Typography> */}
-                    <a href="assets/resume/cv.pdf" className="cv_btn" download>
-                      Download Cv
-                    </a>
-                  </Box>
-                </Box>
-
                 <Box
-                  className="dont_trust_lie"
-                  data-aos="fade-down"
+                  className="ln_btm"
+                  data-aos="flip-left"
                   data-aos-duration={1500}
                   data-aos-delay="200"
                 >
-                  <img
-                    src={assest?.dontTrusLie}
-                    width={1920}
-                    height={822}
+                  <ImgWithEvent
+                    src={assest?.btm_tlSec}
+                    width={915}
+                    height={52}
                     alt="no-image"
                   />
                 </Box>
               </Box>
-            </Container>
-          </Box>
 
-          <Box className="stormtenderBoxes_btm">
-            <Container fixed>
-              <Box className="stormtenderTopWrappers" id="Projects">
-                <Box className="strmtenderBtmHead">
+              <Box className="stormtenderBoxes_topImage">
+                <Box
+                  className="tndboximageCol"
+                  data-aos="zoom-in"
+                  data-aos-duration={2000}
+                  data-aos-delay="200"
+                >
+                  <ImgWithEvent
+                    src={assest.top_lnrImg2}
+                    width={1116}
+                    height={1293}
+                    alt="no-image"
+                  />
+                </Box>
+              </Box>
+
+              <Box className="stormtenderTophead short">
+                <Box className="sec_hdngs">
+                  <Typography
+                    variant="h3"
+                    className="subhd"
+                    data-aos="fade-up"
+                    data-aos-duration={1500}
+                    data-aos-delay="100"
+                  >
+                    React Developer <br />
+                    <Typography variant="h4"> (2021 - Current)</Typography>
+                  </Typography>
                   <Typography
                     variant="h2"
-                    className="strmtenderBtmHeadMain"
+                    className="mainheads"
                     data-aos="fade-up"
                     data-aos-duration={1500}
                     data-aos-delay="150"
                   >
-                    My Projects
-                  </Typography>
-                  <Typography
-                    variant="h3"
-                    className="strmtenderBtmHeadSub"
-                    data-aos="fade-up"
-                    data-aos-duration={1500}
-                    data-aos-delay="200"
-                  >
-                    View some of my past projects to see examples of <br /> my
-                    work
+                    What{" "}
+                    <Typography variant="caption" className="subCp">
+                      I
+                    </Typography>{" "}
+                    Do
                   </Typography>
                 </Box>
-
                 <Box
-                  className="stormtenderBoxes_btm_slide"
+                  className="ln_btm"
+                  data-aos="flip-left"
+                  data-aos-duration={1500}
+                  data-aos-delay="200"
+                >
+                  <ImgWithEvent
+                    src={assest?.btm_tlSec}
+                    width={915}
+                    height={52}
+                    alt="no-image"
+                  />
+                </Box>
+                <Box className="subheadBtm">
+                  <List
+                    className="sub_list"
+                    data-aos="fade-up"
+                    data-aos-duration={1500}
+                    data-aos-delay="150"
+                  >
+                    <ListItem>
+                      <ArrowRightIcon />
+                      Building responsive static websites using Next.js
+                    </ListItem>
+                    <ListItem>
+                      <ArrowRightIcon />
+                      Developing single page applications using React Redux
+                      architecture, ES6
+                    </ListItem>
+                    <ListItem>
+                      <ArrowRightIcon />
+                      Planned website development, converting mockups into
+                      usable web presence with HTML, JavaScript, AJAX, and
+                      JSON coding
+                    </ListItem>
+                  </List>
+                  {/* <Typography
+                    variant="h2"
+                    className="subheadBtmMain"
+                    data-aos="fade-up"
+                    data-aos-duration={1500}
+                    data-aos-delay="100"
+                  >
+                    Singin’ Trav’lers & Collectors of
+                    <Typography
+                      variant="caption"
+                      className="subbtnCaption"
+                      data-aos="fade-up"
+                      data-aos-duration={1500}
+                      data-aos-delay="150"
+                    >
+                      HONEST TROUBLE
+                    </Typography>
+                  </Typography> */}
+                  <a href="assets/resume/cv.pdf" className="cv_btn" download>
+                    <FileIcon /> Download Cv
+                  </a>
+                </Box>
+              </Box>
+
+              <Box
+                className="dont_trust_lie"
+                data-aos="fade-down"
+                data-aos-duration={1500}
+                data-aos-delay="200"
+              >
+                <ImgWithEvent
+                  src={assest?.dontTrusLie}
+                  width={1920}
+                  height={822}
+                  alt="no-image"
+                />
+              </Box>
+            </Box>
+          </Container>
+        </Box>
+
+        <Box className="stormtenderBoxes_btm">
+          <Container fixed>
+            <Box className="stormtenderTopWrappers" id="Projects">
+              <Box className="strmtenderBtmHead">
+                <Typography
+                  variant="h2"
+                  className="strmtenderBtmHeadMain"
+                  data-aos="fade-up"
+                  data-aos-duration={1500}
+                  data-aos-delay="150"
+                >
+                  My Projects
+                </Typography>
+                <Typography
+                  variant="h3"
+                  className="strmtenderBtmHeadSub"
                   data-aos="fade-up"
                   data-aos-duration={1500}
                   data-aos-delay="200"
                 >
-                  <Slider {...settings}>
-                    {slideContent.map((item, index) => (
-                      <Box className="sldierStormSliders" key={index}>
-                        <figure className="main_sld">
-                          <img
-                            src={item?.image}
-                            width={1568}
-                            height={1545}
-                            alt="no-image"
-                          />
-                          <Box className="web_pages">
-                            <Link href={item?.link} target="_blank">
-                              Go to Website
-                            </Link>
+                  View some of my past projects to see examples of <br /> my
+                  work
+                </Typography>
+              </Box>
+
+              <Box
+                className="stormtenderBoxes_btm_slide"
+                data-aos="fade-up"
+                data-aos-duration={1500}
+                data-aos-delay="200"
+              >
+                <Slider {...settings}>
+                  {slideContent.map((item, index) => (
+                    <Box className="sldierStormSliders" key={index}>
+                      <figure className="main_sld">
+                        <ImgWithEvent
+                          src={item?.image}
+                          width={1568}
+                          height={1545}
+                          alt="no-image"
+                        />
+                        <Box className="web_pages">
+                          <Link href={item?.link} target="_blank">
+                            Go to Website
+                          </Link>
+                        </Box>
+                      </figure>
+                    </Box>
+                  ))}
+                </Slider>
+              </Box>
+
+              <Box className="stormtender_Starring">
+                <Box className="stormtender_strHead">
+                  <Box
+                    className="lft_shadow"
+                    data-aos="fade-right"
+                    data-aos-duration={1500}
+                    data-aos-delay="250"
+                    id="skills"
+                  />
+                  <Typography
+                    variant="h2"
+                    className="stormtender_StarringHd"
+                    data-aos="fade-up"
+                    data-aos-duration={1000}
+                    data-aos-delay="150"
+                  >
+                    Skills
+                  </Typography>
+                  <Box
+                    className="rtt_shadow"
+                    data-aos="fade-left"
+                    data-aos-duration={1500}
+                    data-aos-delay="350"
+                  />
+                </Box>
+
+                {/* <Box className="stormtender_strDetails">
+                  <Grid
+                    container
+                    rowSpacing={3}
+                    columnSpacing={{ md: "2vw" }}
+                  >
+                    {starringCast.map((item, index) => (
+                      <Grid
+                        item
+                        xs={12}
+                        md={4}
+                        key={index}
+                        data-aos="fade-up"
+                        data-aos-duration={1500}
+                        data-aos-delay={index * 400 + 100}
+                      >
+                        <Box className="cast_imageInners">
+                          <figure className="main_img">
+                            <ImgWithEvent
+                              src={item?.image}
+                              width={766}
+                              height={761}
+                              alt="no-image"
+                            />
+                          </figure>
+                          <Box className="cast_imageInners_btm">
+                            <Typography variant="h2" className="cast_head">
+                              {item?.name}
+                            </Typography>
                           </Box>
-                        </figure>
+                        </Box>
+                      </Grid>
+                    ))}
+                  </Grid>
+                </Box> */}
+
+                <Box className="stormtender_strDetails">
+                  <Slider {...settings2}>
+                    {starringCast.map((item, index) => (
+                      <Box
+                        key={index}
+                        data-aos="fade-up"
+                        data-aos-duration={1500}
+                        data-aos-delay={index * 400 + 100}
+                      >
+                        <Box className="cast_imageInners">
+                          <figure className="main_img">
+                            <ImgWithEvent
+                              src={item?.image}
+                              width={766}
+                              height={761}
+                              alt="no-image"
+                            />
+                          </figure>
+                          <Box className="cast_imageInners_btm">
+                            <Typography variant="h2" className="cast_head">
+                              {item?.name}
+                            </Typography>
+                          </Box>
+                        </Box>
                       </Box>
                     ))}
                   </Slider>
                 </Box>
 
-                <Box className="stormtender_Starring">
-                  <Box className="stormtender_strHead">
-                    <Box
-                      className="lft_shadow"
-                      data-aos="fade-right"
-                      data-aos-duration={1500}
-                      data-aos-delay="250"
-                      id="skills"
-                    />
-                    <Typography
-                      variant="h2"
-                      className="stormtender_StarringHd"
-                      data-aos="fade-up"
-                      data-aos-duration={1000}
-                      data-aos-delay="150"
-                    >
-                      Skills
-                    </Typography>
-                    <Box
-                      className="rtt_shadow"
-                      data-aos="fade-left"
-                      data-aos-duration={1500}
-                      data-aos-delay="350"
-                    />
-                  </Box>
-
-                  {/* <Box className="stormtender_strDetails">
-                    <Grid
-                      container
-                      rowSpacing={3}
-                      columnSpacing={{ md: "2vw" }}
-                    >
-                      {starringCast.map((item, index) => (
-                        <Grid
-                          item
-                          xs={12}
-                          md={4}
-                          key={index}
-                          data-aos="fade-up"
-                          data-aos-duration={1500}
-                          data-aos-delay={index * 400 + 100}
-                        >
-                          <Box className="cast_imageInners">
-                            <figure className="main_img">
-                              <img
-                                src={item?.image}
-                                width={766}
-                                height={761}
-                                alt="no-image"
-                              />
-                            </figure>
-                            <Box className="cast_imageInners_btm">
-                              <Typography variant="h2" className="cast_head">
-                                {item?.name}
-                              </Typography>
-                            </Box>
-                          </Box>
-                        </Grid>
-                      ))}
-                    </Grid>
-                  </Box> */}
-
-                  <Box className="stormtender_strDetails">
-                    <Slider {...settings2}>
-                      {starringCast.map((item, index) => (
-                        <Box
-                          key={index}
-                          data-aos="fade-up"
-                          data-aos-duration={1500}
-                          data-aos-delay={index * 400 + 100}
-                        >
-                          <Box className="cast_imageInners">
-                            <figure className="main_img">
-                              <img
-                                src={item?.image}
-                                width={766}
-                                height={761}
-                                alt="no-image"
-                              />
-                            </figure>
-                            <Box className="cast_imageInners_btm">
-                              <Typography variant="h2" className="cast_head">
-                                {item?.name}
-                              </Typography>
-                            </Box>
-                          </Box>
-                        </Box>
-                      ))}
-                    </Slider>
-                  </Box>
-
-                  <Box className="stormtender_strBtmdtls">
-                    <Box
-                      className="strormLft"
-                      data-aos="fade-right"
-                      data-aos-duration={1500}
-                      data-aos-delay="250"
-                    />
-                    {/* <Typography
-                      variant="h3"
-                      className="othercmp"
-                      data-aos="fade-up"
-                      data-aos-duration={1000}
-                      data-aos-delay="150"
-                    >
-                      and other bad company
-                    </Typography> */}
-                    <Box
-                      className="strormRtt"
-                      data-aos="fade-left"
-                      data-aos-duration={1500}
-                      data-aos-delay="350"
-                    />
-                  </Box>
+                <Box className="stormtender_strBtmdtls">
+                  <Box
+                    className="strormLft"
+                    data-aos="fade-right"
+                    data-aos-duration={1500}
+                    data-aos-delay="250"
+                  />
+                  {/* <Typography
+                    variant="h3"
+                    className="othercmp"
+                    data-aos="fade-up"
+                    data-aos-duration={1000}
+                    data-aos-delay="150"
+                  >
+                    and other bad company
+                  </Typography> */}
+                  <Box
+                    className="strormRtt"
+                    data-aos="fade-left"
+                    data-aos-duration={1500}
+                    data-aos-delay="350"
+                  />
                 </Box>
               </Box>
-            </Container>
-          </Box>
+            </Box>
+          </Container>
         </Box>
       </Box>
-    </HomeDreamStyled>
+    </Box>
+  </HomeDreamStyled>
   );
 }
 
