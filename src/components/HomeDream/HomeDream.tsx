@@ -955,7 +955,7 @@ function HomeDream() {
                       HONEST TROUBLE
                     </Typography>
                   </Typography> */}
-                  <a href="assets/resume/cv.pdf" className="cv_btn" download>
+                  <a href="/assets/file/rounak-resume.pdf" className="cv_btn" download>
                     <FileIcon /> Download Cv
                   </a>
                 </Box>

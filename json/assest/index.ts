@@ -36,7 +36,7 @@ export default {
   slider_imgs2: "/assets/images/slider_imgs2.webp",
   frame: "/assets/images/frame.webp",
   bannerPeril: "/assets/images/bannerPeril2.webp",
-  peril_secBox1: "/assets/images/peril_secBox1.webp",
+  peril_secBox1: "/assets/images/pp.png",
   peril_secBox2: "/assets/images/peril_secBox2.webp",
   peril_secBox3: "/assets/images/peril_secBox3.webp",
   crow_btm: "/assets/images/crow_btm.webp",
