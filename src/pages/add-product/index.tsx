@@ -105,22 +105,7 @@ const Index = () => {
                     <Controller name='images' control={control} render={({field:{onChange,value},fieldState:{invalid,error}})=>(
                         <>
                          <input type='file' onChange={(e)=>{onChange([e.target.files?.[0]])}}/>
-                        {
-                            invalid && 
-                            (error!.length>0?
-                                
-                                    <List>
-                                        {
-                                            error!.map((_err:any,index:number) =>(
-                                                <ListItem key={index}>{_err.message}</ListItem>
-                                            ))
-                                        }
-                                    </List>
-                                :
-                            <Typography>{error?.message}</Typography>)
-                          
-                            
-                        }
+                
                         </>
                     )}/>
                 </Grid>
